@@ -75,7 +75,6 @@ replacements['SIZE'] = '{} x {} x {}'.format(replacements['SIZEMIN'],replacement
 
 for line in template.paragraphs:
     for key in replacements.keys():
-        print key
         tabStops = line.paragraph_format.tab_stops
         tabStops.add_tab_stop(Cm(1.0))
         tabStops.add_tab_stop(Cm(4.0))
