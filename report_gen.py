@@ -19,8 +19,13 @@ spgrps = {
     '<mn>1</mn>'
     '</math>'),
     '2' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
+    '<semantics>'
     '<mi>P</mi>'
-    '<mover accent="true">_<mn>1</mn></mover>'
+    '<mover>'
+    '<mn>1</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
+    '</semantics>'
     '</math>'),
     #
     # monoclinic
@@ -1790,7 +1795,7 @@ now = datetime.datetime.now()
 
 keys_report = ['ID', 'USER', 'DATE', 'SUM', 'SUM1', 'MOI', 'WEIGHT', 'CRYSSYSTEM', 'SPGRP', 'CELLA', 'CELLB',
     'CELLC', 'ALPHA', 'BETA', 'GAMMA', 'VOLUME', 'ZERR', 'DENSITY', 'MU', 'COMPLETENESS', 'THETAMIN',
-    'THETAMAX', 'COLLRFL', 'UNIQUE', 'UNIQUE2S', 'ABSCORR', 'TMAX', 'TMIN', 'DATA', 'PARAM', 'RESTR', 'GOOF',
+    'THETAMAX', 'COLLRFL', 'UNIQUE', 'SOMETHING', 'ABSCORR', 'TMAX', 'TMIN', 'DATA', 'PARAM', 'RESTR', 'GOOF',
     'R1ALL', 'R12SIG', 'WR2ALL', 'WR2SIG', 'HIGHPEAK', 'DEEPHOLE', 'SIZEMAX', 'SIZEMIN', 'SIZEMID']
 
 keys_cif = {'_cell_length_a':'CELLA', '_cell_length_b':'CELLB', '_cell_length_c':'CELLC', '_cell_angle_alpha':'ALPHA',
@@ -1799,7 +1804,7 @@ keys_cif = {'_cell_length_a':'CELLA', '_cell_length_b':'CELLB', '_cell_length_c'
     '_exptl_crystal_size_min':'SIZEMIN', '_exptl_absorpt_coefficient_mu':'MU', '_exptl_absorpt_correction_type':'ABSCORR',
     '_exptl_absorpt_correction_T_min':'TMIN','_exptl_absorpt_correction_T_max':'TMAX', '_diffrn_reflns_theta_min':'THETAMIN',
     '_diffrn_reflns_theta_max':'THETAMAX', '_diffrn_reflns_number':'COLLRFL', '_reflns_number_total':'UNIQUE',
-    '_reflns_number_gt':'UNIQUE2S', '_diffrn_measured_fraction_theta_max':'COMPLETENESS', '_chemical_formula_sum':'SUM',
+    '_reflns_number_gt':'SOMETHING', '_diffrn_measured_fraction_theta_max':'COMPLETENESS', '_chemical_formula_sum':'SUM',
     '_chemical_formula_moiety':'MOI','_space_group_crystal_system':'CRYSSYSTEM','_chemical_formula_weight':'WEIGHT',
     '_refine_ls_number_reflns':'DATA','_refine_ls_number_parameters':'PARAM', '_refine_ls_number_restraints':'RESTR',
     '_refine_ls_restrained_S_all':'GOOF','_refine_ls_R_factor_all':'R1ALL', '_refine_ls_R_factor_gt':'R12SIG',
@@ -1823,6 +1828,7 @@ def cifReader(cifFile):
                 except IndexError:
                     value = '-'
                 outDict[keys_cif[tempKey]] = value
+                #print(tempKey,value)
         except IndexError:
             pass
     return outDict
@@ -1836,6 +1842,7 @@ except:
 args = parser.parse_args()
 template = Document(args.docx)
 replacements = cifReader(args.input)
+#print(replacements.keys())
 replacements['USER'] = args.user
 
 if args.special:
@@ -1845,22 +1852,28 @@ else:
 
 replacements['SIZE'] = '{} x {} x {}'.format(replacements['SIZEMIN'],replacements['SIZEMID'],replacements['SIZEMAX'])
 
-for line in template.paragraphs:
-    for key in replacements.keys():
-        tabStops = line.paragraph_format.tab_stops
-        tabStops.add_tab_stop(Cm(1.0))
-        tabStops.add_tab_stop(Cm(4.0))
-        tabStops.add_tab_stop(Cm(8.0))
-        tabStops.add_tab_stop(Cm(12.0))      
-        inline = line.runs
+for paragraph in template.paragraphs:
+    tabStops = paragraph.paragraph_format.tab_stops
+    tabStops.add_tab_stop(Cm(1.0))
+    tabStops.add_tab_stop(Cm(4.0))
+    tabStops.add_tab_stop(Cm(8.0))
+    tabStops.add_tab_stop(Cm(12.0)) 
+    for key in replacements.keys():     
+ #       print(key)
+        if key == 'SOMETHING':
+            if key in i.text:
+                print(i.text)
+        inline = paragraph.runs
         for i in inline:
             if key in i.text:
+#                print(key)
+#                print(i.text)    
                 if key == 'SPGRP':
                     newLine = i.text.replace('SPGRP', '')
                     i.text = newLine
                     transform = etree.XSLT(xslt)
                     new_dom = transform(etree.fromstring(spgrps[replacements[key]]))
-                    line._element.append(new_dom.getroot())
+                    paragraph._element.append(new_dom.getroot())
                 else:
                     newLine = i.text.replace(key, replacements[key])
                     i.text = newLine
