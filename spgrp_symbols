@@ -7,8 +7,13 @@ spgrps = {
     '<mn>1</mn>'
     '</math>'),
     '2' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
+    '<semantics>'
     '<mi>P</mi>'
-    '<mover accent="true">_<mn>1</mn></mover>'
+    '<mover>'
+    '<mn>1</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
+    '</semantics>'
     '</math>'),
     #
     # monoclinic
@@ -547,11 +552,17 @@ spgrps = {
     '</math>'),
     '81' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">_<mn>4</mn></mover>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '</math>'),
     '82' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>I</mi>'
-    '<mover accent="true">_<mn>4</mn></mover>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '</math>'),
     '83' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
@@ -782,27 +793,27 @@ spgrps = {
     '</math>'),
     '111' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>2</mn>'
     '<mn>m</mn>'
     '</math>'),
     '112' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>2</mn>'
     '<mn>c</mn>'
     '</math>'),
     '113' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<msub>'
     '<mn>2</mn>'
@@ -812,9 +823,9 @@ spgrps = {
     '</math>'),
     '114' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<msub>'
     '<mn>2</mn>'
@@ -824,72 +835,72 @@ spgrps = {
     '</math>'),
     '115' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '<mn>2</mn>'
     '</math>'),
     '116' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>c</mn>'
     '<mn>2</mn>'
     '</math>'),
     '117' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>b</mn>'
     '<mn>2</mn>'
     '</math>'),
     '118' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>n</mn>'
     '<mn>2</mn>'
     '</math>'),
     '119' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>I</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '<mn>2</mn>'
     '</math>'),
     '120' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>I</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>c</mn>'
     '<mn>2</mn>'
     '</math>'),
     '121' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>I</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>2</mn>'
     '<mn>m</mn>'
     '</math>'),
     '122' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>I</mi>'
-    '<mover accent="true">'
-    '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mover>
+    '<mn>4</mn>
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>2</mn>'
     '<mn>d</mn>'
@@ -1111,16 +1122,16 @@ spgrps = {
     '</math>'),
     '147' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true"'
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '148' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>R</mi>'
-    '<mover accent="true"'
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '149' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1137,37 +1148,37 @@ spgrps = {
     '</math>'),
     '151' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true"'
+    '<msub>'
     '<mn>3</mn>'
     '<mn>1</mn>'
-    '</mover>'
+    '</msub>'
     '<mn>1</mn>'
     '<mn>2</mn>'
     '</math>'),
     '152' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true"'
+    '<msub'
     '<mn>3</mn>'
     '<mn>1</mn>'
-    '</mover>'
+    '</msub>'
     '<mn>2</mn>'
     '<mn>1</mn>'
     '</math>'),
     '153' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true"'
+    '<msub>'
     '<mn>3</mn>'
     '<mn>2</mn>'
-    '</mover>'
+    '</msub>'
     '<mn>1</mn>'
     '<mn>2</mn>'
     '</math>'),
     '154' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<msub>'
     '<mn>3</mn>'
     '<mn>2</mn>'
-    '</mover>'
+    '</msub>'
     '<mn>2</mn>'
     '<mn>1</mn>'
     '</math>'),
@@ -1212,48 +1223,54 @@ spgrps = {
     '</math>'),
     '162' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>1</mn>'
     '<mn>m</mn>'
     '</math>'),
     '163' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>1</mn>'
     '<mn>c</mn>'
     '</math>'),
     '164' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>m</mn>'
     '<mn>1</mn>'
     '</math>'),
     '165' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>c</mn>'
     '<mn>1</mn>'
     '</math>'),
     '166' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>R</mi>'
-    '<mover accent="true">
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>m</mn>'
     '</math>'),
     '167' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>R</mi>'
-    '<mover accent="true">
+    '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'
     '<mn>c</mn>'
     '</math>'),
     #
@@ -1265,45 +1282,45 @@ spgrps = {
     '</math>'),
     '169' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>1</mn>'
     '</msub>'    
     '</math>'),
     '170' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>5</mn>'
     '</msub>'    
     '</math>'),
     '171' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>2</mn>'
     '</msub>'    
     '</math>'),
     '172' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>4</mn>'
     '</msub>'    
     '</math>'),
     '173' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>3</mn>'
     '</msub>'    
     '</math>'),
     '174' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover>
+    '<mover>'
     '<mn>6</mn>'
-    '<mn>-</mn>'
-    '</mover>'    
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '</math>'),
     '175' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
@@ -1313,7 +1330,7 @@ spgrps = {
     '</math>'),
     '176' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>3</mn>'
     '</msub>'
@@ -1328,7 +1345,7 @@ spgrps = {
     '</math>'),
     '178' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>1</mn>'
     '</msub>'
@@ -1337,7 +1354,7 @@ spgrps = {
     '</math>'),
     '179' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>5</mn>'
     '</msub>'
@@ -1346,7 +1363,7 @@ spgrps = {
     '</math>'),
     '180' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>2</mn>'
     '</msub>'
@@ -1355,7 +1372,7 @@ spgrps = {
     '</math>'),
     '181' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>4</mn>'
     '</msub>'
@@ -1364,7 +1381,7 @@ spgrps = {
     '</math>'),
     '182' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<msub>
+    '<msub>'
     '<mn>6</mn>'
     '<mn>3</mn>'
     '</msub>'
@@ -1403,37 +1420,37 @@ spgrps = {
     '</math>'),
     '187' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>6</mn>'
-    '<mn>-</mn>'
-    '</mover>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '<mn>m</mn>'
     '<mn>2</mn>'
     '</math>'),
     '188' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>6</mn>'
-    '<mn>-</mn>'
-    '</mover>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '<mn>c</mn>'
     '<mn>2</mn>'
     '</math>'),
     '189' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>6</mn>'
-    '<mn>-</mn>'
-    '</mover>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '<mn>2</mn>'
     '<mn>m</mn>'
     '</math>'),
     '190' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
-    '<mover accent="true">'
+    '<mover>'
     '<mn>6</mn>'
-    '<mn>-</mn>'
-    '</mover>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '<mn>2</mn>'
     '<mn>c</mn>'
     '</math>'),
@@ -1508,15 +1525,15 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
-    '</mover>'
+    '<mo stretchy="false">&#x0305;</mo>'
+    '</mover>'   
     '</math>'),
     '201' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
     '<mi>P</mi>'
     '<mn>n</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '202' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1524,7 +1541,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '203' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1532,7 +1549,7 @@ spgrps = {
     '<mn>d</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '204' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1540,7 +1557,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '205' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1548,7 +1565,7 @@ spgrps = {
     '<mn>a</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '206' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1556,7 +1573,7 @@ spgrps = {
     '<mn>a</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '</math>'),
     '207' : ('<math xmlns="http://www.w3.org/1998/Math/MathML">'
@@ -1626,7 +1643,7 @@ spgrps = {
     '<mi>P</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>m</mn>'
@@ -1635,7 +1652,7 @@ spgrps = {
     '<mi>F</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>m</mn>'
@@ -1644,7 +1661,7 @@ spgrps = {
     '<mi>I</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>m</mn>'
@@ -1653,7 +1670,7 @@ spgrps = {
     '<mi>P</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>n</mn>'
@@ -1662,7 +1679,7 @@ spgrps = {
     '<mi>F</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>c</mn>'
@@ -1671,7 +1688,7 @@ spgrps = {
     '<mi>I</mi>'
     '<mover>'
     '<mn>4</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>3</mn>'
     '<mn>d</mn>'
@@ -1681,7 +1698,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '</math>'),
@@ -1690,7 +1707,7 @@ spgrps = {
     '<mn>n</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>n</mn>'
     '</math>'),
@@ -1699,7 +1716,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>n</mn>'
     '</math>'),
@@ -1708,7 +1725,7 @@ spgrps = {
     '<mn>n</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '</math>'),
@@ -1717,7 +1734,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '</math>'),
@@ -1726,7 +1743,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>c</mn>'
     '</math>'),
@@ -1735,7 +1752,7 @@ spgrps = {
     '<mn>d</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '</math>'),
@@ -1744,7 +1761,7 @@ spgrps = {
     '<mn>d</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>c</mn>'
     '</math>'),
@@ -1753,7 +1770,7 @@ spgrps = {
     '<mn>m</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>m</mn>'
     '</math>'),
@@ -1762,7 +1779,7 @@ spgrps = {
     '<mn>a</mn>'
     '<mover>'
     '<mn>3</mn>'
-    '<mn>-</mn>'
+    '<mo stretchy="false">&#x0305;</mo>'
     '</mover>'
     '<mn>d</mn>'
     '</math>'),
